@@ -83,8 +83,8 @@ button:hover {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 10px;
-    max-width: 100%; /* Ensure the grid doesn't exceed the width of the container */
-    margin: 0 auto; /* Center the grid */
+    width: 200px;
+    margin: 0 auto;
 }
 
 .grid-item {

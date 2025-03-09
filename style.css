@@ -77,10 +77,13 @@ button:hover {
     grid-template-columns: repeat(3, 1fr);
     gap: 10px;
 }
+.grid-item {
+    overflow: hidden;
+}
 
 .grid-item img {
     width: 100%;
-    height: auto; 
+    height: 200PX; 
     object-fit: cover;
     border-radius: 5px;
 }

@@ -61,6 +61,7 @@ button:hover {
     display: flex;
     justify-content: center;
     gap: 10px;
+    flex-wrap: wrap;
 }
 
 .card {
@@ -69,6 +70,12 @@ button:hover {
     padding: 20px;
     border-radius: 5px;
     width: 30%;
+    box-sizing: border-box;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    transition: transform 0.3s;
 }
 
 /* CSS Grid */
@@ -77,14 +84,15 @@ button:hover {
     grid-template-columns: repeat(3, 1fr);
     gap: 10px;
 }
+
 .grid-item {
     overflow: hidden;
 }
 
 .grid-item img {
-    width: 100%;
-    height: 200px; 
-    object-fit: cover;
+    width: 100%;        /* Ensures the image takes up the full width of the container */
+    height: 200px;      /* Fixed height to make images the same size */
+    object-fit: cover;  /* Ensures the image covers the area without stretching or distorting */
     border-radius: 5px;
 }
 
@@ -93,9 +101,11 @@ button:hover {
     .cards {
         flex-direction: column;
     }
+
     .card {
         width: 100%;
     }
+
     .grid-container {
         grid-template-columns: repeat(2, 1fr);
     }

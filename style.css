@@ -81,7 +81,8 @@ button:hover {
 .grid-item {
     background: #ffc107;
     padding: 20px;
-    text-align: center;
+    height: 150px;
+    width: 150px;
     border-radius: 5px;
 }
 

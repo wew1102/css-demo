@@ -83,16 +83,19 @@ button:hover {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 10px;
+    max-width: 100%; /* Ensure the grid doesn't exceed the width of the container */
+    margin: 0 auto; /* Center the grid */
 }
 
 .grid-item {
     overflow: hidden;
+    position: relative;
 }
 
 .grid-item img {
-    width: 100%;        /* Ensures the image takes up the full width of the container */
-    height: 200px;      /* Fixed height to make images the same size */
-    object-fit: cover;  /* Ensures the image covers the area without stretching or distorting */
+    width: 100%;           /* Make image fill the width of the grid item */
+    height: 200px;         /* Set a fixed height for all images */
+    object-fit: cover;     /* Ensure the image fills the area without distortion */
     border-radius: 5px;
 }
 
